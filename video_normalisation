@@ -1,0 +1,26 @@
+UNF video(title,director,serial)
+customer(name,addr,memberno)
+hire(memberno,serial,date)
+
+1NF video(title,director,serial)
+customer(name,addr,memberno)
+hire(memberno,serial,date)
+
+2NF video(title,director,serial)
+customer(name,addr,memberno)
+hire(memberno,serial,date)
+ 
+3NF video(title,director,serial) this relation is not in the 3rd normal form => total in 2NF
+	video(title, serial)
+	serial(serial, director)
+customer(name,addr,memberno) already in 3NF 
+hire(memberno,serial,date) aready in 3NF
+
+BCF  3NF 
+video(title, serial)
+ serial(serial, director)
+customer(name,addr,memberno)
+hire(memberno,serial,date)
+
+
+

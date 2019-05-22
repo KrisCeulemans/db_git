@@ -1,0 +1,6 @@
+UNF (branchNo, branchadress, telnos)
+1NF Branch(branchNo, branchaddress)
+	BranchTelephone(brancNo, telNo)
+
+2NF 1NF
+3NF 2NF

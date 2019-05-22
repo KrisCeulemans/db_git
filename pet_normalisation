@@ -1,0 +1,8 @@
+UNF Pet(PEtId, Pet_name, Pet_type, Pet_age, owner), (Visit_date, procedureno, procedure_name) 
+1NF Pet(PEtId, Pet_name, Pet_type, Pet_age, owner)
+	Pet_Visit (petid,Visit_date, procedureno, procedure_name)
+2NF Pet(PEtId, Pet_name, Pet_type, Pet_age, owner)
+	Pet_Visit(petid,Visit_date, procedureno)
+	Procedure(ProcedureNo, procedure_name)
+3NF 2NF
+
