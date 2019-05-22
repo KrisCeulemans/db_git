@@ -1,0 +1,13 @@
+1) in browser: http://rest.ensemble.org/archive/id/ENSG00000141510
+in terminal: $ curl "http://rest.ensemble.org/archive/id/ENSG00000141510" -H "Content-type:application/json"
+
+
+2)Must be in terminal because 2 id's can not be passed by a get => post needed
+in terminal: $ curl "http://rest.ensembl.org/archive/id/" -H "Content-type:application/json" -H "Accept:application/json" -X POST -d '{"id": ["ENSG00000012048", "ENSG00000136997"]}'
+X: using this method
+Accept: accept data in this format
+-d: this is the data
+-H: HEADER parameter
+
+3)
+
